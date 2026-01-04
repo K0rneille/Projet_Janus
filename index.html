@@ -20,35 +20,43 @@
     <script src="assets/script.js" defer></script>
     <link rel="stylesheet" href="assets/style.css">
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <nav>
         <div class="nav__container">
             <a class="logo">Janus</a>
             <ul class="nav_links">
-                <li class="nav__button">Description</li>
-                <li class="nav__button">Critique</li>
-                <li class="nav__button">Promotion</li>
-                <li class="nav__button">Avis personnel</li>
+                <li class="nav__button"><a href="">Description</a></li>
+                <li class="nav__button"><a href="">Critique</a></li>
+                <li class="nav__button"><a href="">Promotion</a></li>
+                <li class="nav__button"><a href="">Avis personnel</a></li>
             </ul>
         </div>
     </nav>
     <main>
         <section class="header">
-            <h1>Sara, le futur du web</h1>
-            <p class="bigtext">Sara Soueidan est une auteure, développeuse, éducatrice et oratrice.</p>
-            <p>Depuis plus de 10 ans, dans son métier de développeuse et grâce à ses workshops, elle s’efforce a rendre le web plus accessible, plus facile d’accès pour tout le monde.</p>
-            <h2>Une maitrise hors pair</h2>
-            <p>Passée maitre dans le svg et le css, Sara s’est fais connaitre mondialement avec son travail solide et minutieux. Elle permet à de nombreuses personnes de pouvoir ce lancer dans la communication web grâce a ses formations  complètes et faciles d’accès. Elle participe à beaucoup de conférences, à des workshops attractifs et tiens à jour sa propre newsletter.</p>
-            
-            <aside class="header_illu">
+            <div class="text__column">
+                <h1>Sara, le futur du web</h1>
+                <p class="bigtext">Sara Soueidan est une auteure, développeuse, éducatrice et oratrice.</p>
+                <p>Depuis plus de 10 ans, dans son métier de développeuse et grâce à ses workshops, elle s’efforce a rendre le web plus accessible, plus facile d’accès pour tout le monde.</p>
+                <h2>Une maitrise hors pair</h2>
+                <p>Passée maitre dans le svg et le css, Sara s’est fais connaitre mondialement avec son travail solide et minutieux. Elle permet à de nombreuses personnes de pouvoir ce lancer dans la communication web grâce a ses formations  complètes et faciles d’accès. Elle participe à beaucoup de conférences, à des workshops attractifs et tiens à jour sa propre newsletter.</p>
+            </div>
+            <aside class="header__illu">
                 <img src="assets/img/image 14.webp" alt="sara soueidan faisant une conférence" class="header_photo">
                 <span class="CC-commons-by">—Site internet de Sara</span>
             </aside>
-
-            <h2>Une récompense méritée</h2>
-            <p>En 2015 le monde se tourne vers elle lorsque elle reçois le prix de développeuse de l’année pour récompenser son travail unique et ses innovations. Sara reçois aussi un prix “O’Reilly Web Platform” Pour sa collaboration dans les languages html css et javascript</p>
-
+        </section>
+        <section class="section__logos">
+            <div class="text__column">
+                <h2>Une récompense méritée</h2>
+                <p>En 2015 le monde se tourne vers elle lorsque elle reçois le prix de développeuse de l’année pour récompenser son travail unique et ses innovations. Sara reçois aussi un prix “O’Reilly Web Platform” Pour sa collaboration dans les languages html css et javascript</p>
+            </div>
             <aside class="company_logo">
                 <img src="" alt="netflix">
                 <img src="" alt="codrops">
@@ -58,6 +66,7 @@
                 <img src="" alt="HermanMiller">
                 <img src="" alt="Superfriendly">
             </aside>
+        </section>
             <h2>Ses actions dans le monde du web</h2>
             <p>En plus de sa newsletter, elle à participée dans le passé a l’écriture de “ Smashing book” - un livre sur l’économie de temps dans la création de sites web responsives- et a écrit le “ codrops ccss reference” qui est une classification de toutes les propriété css.</p>
 
