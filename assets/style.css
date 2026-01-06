@@ -6,6 +6,8 @@ body{
     color: black;
     font-size: 18px;
     line-height: 140%;
+    letter-spacing: -5%;
+    
 }
 
 
@@ -58,10 +60,19 @@ section{
 
 }
 
+.header--pg2{
+    width: 84%;
+}
+
 h1{
     font-size: 48px;
     font-weight: 700;
     line-height: 100%;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 700;
 }
 .bigtext{
     font-size: 24px;
@@ -72,6 +83,8 @@ h1{
 p{
     max-width: 100%;
 }
+
+
 
 .text__column{
 
@@ -103,6 +116,12 @@ p{
 
 }
 
+
+.evenment__text{
+    margin: 10vh 0;
+}
+
+
 .CC-commons-by{
     display: flex;
     align-items: center;
@@ -111,10 +130,33 @@ p{
     & img{
         height: 28px;
     }
-
-
 }
 
+
+.linkpg2{
+    gap: 13px;
+    & img{
+        height: 20px;
+    }
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    height: 20px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: solid 1px black;
+    width: fit-content;
+
+    & p{
+        margin: 0;
+
+    }
+}
 
 .company__logo {
     display: flex;
@@ -148,9 +190,10 @@ p{
 .callnextpage{
     width: 100%;
 
-
-    
 }
+
+
+
 
 .callnextpage__container{
     justify-self: center;
@@ -173,6 +216,18 @@ p{
     }
 }
 
+
+.callnextpage--pg2{
+    width: 60%
+}
+
+.callnextpage__container--pg2{
+    box-sizing: border-box;
+
+    width: 100%;
+
+}
+
 /* footer----------------------------------------------- */
 
 
@@ -193,7 +248,7 @@ footer{
 h3{
     font-family: "Open sans", sans-serif;
     font-weight: 700;
-    letter-spacing: -5%;
+
     font-size: 24;
 }
 
