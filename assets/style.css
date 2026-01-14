@@ -76,6 +76,7 @@ p{
 .text__column{
 
     width: 40%;
+    height: 200px;
     display: flex;
     flex-direction: column;
     & h2{
