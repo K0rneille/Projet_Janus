@@ -1,7 +1,7 @@
 "use strict" ;
 
 
-const nav = document.querySelector(".nav") ;
+const nav = document.querySelector(".nav");
 const button = document.querySelector(".burgermenu");
 const links = document.querySelectorAll(".nav__link");
 
@@ -14,13 +14,17 @@ if (nav){
 }
 
 function menuclose(event){
-    event.preventDefault();
-    console.log('caca')
-
     if (nav.classList.contains("nav--open")){
 
-        nav.classList.remove("nav--open");
+
+
+        if (nav.classList.contains("nav--open")){
+
+            nav.classList.remove("nav--open");
+        }
+
     }
+
 
 
 }
@@ -28,7 +32,6 @@ function menuclose(event){
 
 function menuswitch(event){
     event.preventDefault();
-    console.log('caca')
 
     nav.classList.toggle("nav--open");
 }
