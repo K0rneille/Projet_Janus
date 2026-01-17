@@ -12,6 +12,13 @@ body{
 }
 
 
+.body--punk{
+   background-image: url(img/bruit__fond.png);
+   background-position: 0%;
+   background-clip: border-box;
+   background-size: contain;
+}
+
 /* nav -----------------------------------------------*/
 nav{
 
@@ -21,6 +28,10 @@ nav{
 
 .nav{
     width: 100%;
+}
+
+.nav--punk{
+    background-color: #FF61F4;
 }
 .nav__container{
     display: flex;
@@ -46,7 +57,29 @@ nav{
         transition: color 0.3s; 
     }
 }
+ .nav__link:hover{
+        color: rgb(0, 0, 0);
+        transition: color 0.5s;
+    }
 
+
+.nav__link--punk{
+    background-color: white;
+    padding: 0 5px;
+    font-family: "Cutive Mono", monospace;
+    font-weight: 700;
+    transition: all .3s;
+    transform: rotate(0deg);
+}
+
+
+.nav__link--punk:hover{
+    transform: rotate(45deg);
+    color:#FBFF00;
+    background-color: black;
+    transition: all .3ss;
+
+}
 
 .burgermenu{
 
@@ -93,10 +126,7 @@ nav{
 
     }
 
-    & .nav__link:hover{
-        color: rgb(0, 0, 0);
-        transition: color 0.5s;
-    }
+
 
 }
 
@@ -126,6 +156,12 @@ nav{
     font-weight: 500;
 }
 
+
+.logo--punk{
+    font-family: "Barriecito", system-ui;
+}
+
+
 /* body -----------------------------------------------*/
 section{
     padding: 50px 0;
@@ -145,6 +181,199 @@ section{
 .header--pg2{
     width: 84%;
 }
+
+
+
+
+
+
+/*punkpage- ----------------------------------------------------*/
+
+
+
+.subtitle__punk{
+    position: absolute;
+    background-color:#FBFF00 ;
+    padding: 5px 15px; 
+    bottom: 160px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-8deg);
+    font-family: "Special Elite", system-ui;
+    font-weight: 200;
+
+}
+
+.title__punk{
+    margin: 10vh 0;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(6,175px);
+    grid-template-rows: repeat(3,fit-content);
+    gap: 10px;
+    justify-content: center;    
+}
+
+
+
+.title__punk__element{
+    font-weight: 400;
+    box-sizing: border-box;
+    height:170px ;
+    display: flex;
+    font-size: 200px;
+    background-image: url(img/paper-texture.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15%;
+
+    
+}
+
+.title__punk__element--1{
+    font-family: "Croissant One", serif;
+    grid-column: 2;
+    grid-row: 1;
+    transform: rotate(10deg);
+
+    filter: sepia(20%);
+}
+
+.title__punk__element--2{
+    font-family: "Stint Ultra Expanded", serif; 
+    grid-column: 3;
+    grid-row: 1;
+    transform: rotate(-5deg);
+    filter: invert(100%);
+}
+
+.title__punk__element--3{
+    font-family: "Cutive Mono", monospace;  
+    grid-column: 4;
+    grid-row: 1;
+    transform: rotate(3deg);
+
+
+}
+
+.title__punk__element--4{
+    font-family: "Roboto", sans-serif;    
+    grid-column: 5;
+    grid-row: 1;
+    transform: rotate(25deg);
+
+    filter: invert(90%);
+
+}
+
+
+
+.title__punk__element--5{
+    font-family: "Crimson Text", serif;
+    grid-column: 6;
+    grid-row: 1;
+    transform: rotate(-15deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.title__punk__element--6{
+    font-family: "Cutive Mono", monospace;  
+    grid-column: 2;
+    grid-row: 2;
+    transform: rotate(-15deg);
+
+    filter: invert(100%);
+}
+
+.title__punk__element--7{
+    font-family: "Roboto", sans-serif;
+    grid-column: 3;
+    grid-row: 2;
+    transform: rotate(-5deg);
+    filter: sepia(10%);
+    
+}
+
+.title__punk__element--8{
+    font-family: "Crimson Text", serif;
+    grid-column: 4;
+    grid-row: 2;
+    transform: rotate(10deg);
+    filter: invert(10%);
+}
+
+.title__punk__element--9{
+    font-family: "Stint Ultra Expanded", serif; 
+    grid-column:5;
+    grid-row: 2;
+    transform: rotate(-5deg);
+}
+
+
+.title__punk__element--10{
+    font-family: "Cutive Mono", monospace; 
+    grid-column: 1;
+    grid-row: 3;
+    transform: rotate(-10deg);
+}
+
+.title__punk__element--11{
+    font-family: "Stint Ultra Expanded", serif;
+    grid-column: 2;
+    grid-row: 3;
+    transform: rotate(20deg);
+    filter: sepia(70%);
+}
+.title__punk__element--12{
+    
+    font-family: "Cutive Mono", monospace;
+    grid-column: 3;
+    grid-row: 3;
+    transform: rotate(5deg);
+}
+.title__punk__element--13{
+    font-family: "Roboto", sans-serif;
+    grid-column: 4;
+    grid-row: 3;
+    transform: rotate(-20deg);
+    filter: invert(100%);
+
+}
+.title__punk__element--14{
+    font-family: "Croissant One", serif;
+    grid-column: 5;
+    grid-row: 3;
+
+}
+.title__punk__element--15{
+    font-family: "Stint Ultra Expanded", serif;
+    grid-column: 6;
+    grid-row: 3;
+    transform: rotate(5deg);
+    filter: invert(90%);
+}
+
+
+
+
+
+
+
+
 
 h1{
     font-size: 48px;
@@ -170,6 +399,12 @@ p{
 }
 
 
+
+.punksection1{
+    background-color: black;
+    width: 100%;
+    height: 800px;
+}
 
 .text__column{
 
