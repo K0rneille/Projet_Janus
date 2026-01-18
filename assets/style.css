@@ -459,6 +459,17 @@ section{
     width: 100%;
     grid-column: 2;
     grid-row: 2/5;
+    transform: rotate(-5deg);
+
+}
+
+.punksection1__img3{
+    padding: 0 20% ;
+ 
+    height: 100%;
+    width: auto;
+    grid-column: 2/ -1;
+    grid-row: 4;
 
 }
 
