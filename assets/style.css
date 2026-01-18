@@ -14,7 +14,7 @@ body{
 
 .body--punk{
    background-image: url(img/bruit__fond.png);
-   background-position: 0%;
+
    background-clip: border-box;
    background-size: contain;
 }
@@ -368,11 +368,108 @@ section{
 }
 
 
+.medicament{
+    position: absolute;
+    right: 50px;
+    height: 400px;
+    top: 70vh;
+}
 
 
 
 
+.punksection1{
+    box-sizing: border-box;
+    padding: 150px 150px;
+    gap: 50px;
+    display: grid;
+    grid-template-rows: 300px 100px 300px 300px;
+    grid-template-columns: 2fr 1fr 2fr;
+    background-image: url(img/bruit__section1.png);
+    background-size: cover;
+    width: 100%;
 
+}
+
+.section1title{
+
+    grid-column: 1 / 3;
+
+    & .section1title__element{
+        margin: 25px 10px;
+        display: block;
+        color: white;
+    }
+
+    & .section1title__element--1{
+
+        transform: rotate(0deg);
+    }
+    & .section1title__element--2{
+
+        transform: rotate(-2deg);
+    }
+    & .section1title__element--bg{
+        background-color:#FF61F4 ;
+        padding: 5px 10px;
+        transform: rotate(2deg);
+    }
+}
+
+
+.section1bloctxt{
+    grid-column: 3;
+    grid-row: 2 / 4;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.punksection1__img1{
+    position: relative;
+    grid-column: 1;
+    grid-row: 3/5;
+
+    & img{
+        width: 100%;
+        height:auto;
+        z-index: 1;
+    }
+
+}
+
+.punksection1__img1:before{
+    content: 'aa';
+    position: absolute;
+    background: url(img/pince.webp);
+    height: 100%;
+    width: 100%;
+    transform: scale(45%);
+    top: -50%;
+    right: -45%;
+    z-index: 3;
+}
+
+
+.punksection1__img2{
+    height: auto;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2/5;
+
+}
+
+
+.text__bg{
+    background-color: #FBFF00;
+    color: black;
+    padding: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
 
 
 h1{
@@ -388,6 +485,12 @@ h2{
     font-weight: 700;
     line-height: 110%
 }
+
+
+.h2__punk{
+    font-family: "Special Elite", system-ui;
+    font-weight: 200;
+}
 .bigtext{
     font-size: 24px;
     font-weight: 300;
@@ -400,11 +503,7 @@ p{
 
 
 
-.punksection1{
-    background-color: black;
-    width: 100%;
-    height: 800px;
-}
+
 
 .text__column{
 
